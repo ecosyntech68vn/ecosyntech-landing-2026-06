@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Về EcoSynTech Global — Founder, sứ mệnh, triết lý công nghệ</title>
+<meta name="description" content="EcoSynTech Global: công ty công nghệ nông nghiệp sinh ra ở Việt Nam. Founder full-stack tự xây từ bo mạch đến đám mây. Frugal Innovation · Human-Centric Design.">
+<meta name="theme-color" content="#225433">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/landing.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="brand">
+      <span class="brand-mark">ES</span>
+      <span>EcoSynTech</span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/farm-os.html">Farm OS</a></li>
+        <li><a href="/about.html" style="color:var(--primary);font-weight:700;">Công ty</a></li>
+        <li><a href="#tech">Triết lý công nghệ</a></li>
+        <li><a href="#founder">Founder</a></li>
+        <li><a href="/pilot.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <a href="/launcher.html" class="btn btn-ghost btn-sm">Đăng nhập</a>
+      <a href="/pilot.html" class="btn btn-primary btn-sm">Đăng ký pilot →</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero About -->
+<section class="hero">
+  <div class="container">
+    <div style="max-width:840px;">
+      <span class="pill pill-amber"><span class="pill-dot"></span>EcoSynTech Global · Founded 2024</span>
+      <h1 style="margin-top:18px;">Sinh ra từ <span class="em">vấn đề thật</span> của nông trại Việt Nam.</h1>
+      <p class="lead" style="margin-top:22px;">Chúng tôi không bắt đầu từ ý tưởng "smart farming hay quá". Chúng tôi bắt đầu từ 52 farm khảo sát ở Sơn La, Mộc Châu, Lào Cai, Hà Giang — nơi nông dân nói với chúng tôi: "Hệ thống nhập khẩu mất sóng là chết, đắt quá, không ai sửa được".</p>
+    </div>
+  </div>
+</section>
+
+<!-- Mission + Vision -->
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="gap:60px;align-items:start;">
+      <div>
+        <span class="eyebrow">Sứ mệnh</span>
+        <h2 style="margin-top:14px;">Trao quyền cho nông dân Việt Nam bằng công nghệ tự xây.</h2>
+        <p class="lead" style="margin-top:20px;">Mỗi giờ mất mạng không được biến thành tổn thất năng suất. Mỗi gói chè xuất EU phải có truy xuất gốc đầy đủ. Mỗi nông trại nhỏ nên vận hành được mà không cần thuê đội kỹ thuật.</p>
+      </div>
+      <div>
+        <span class="eyebrow">Tầm nhìn</span>
+        <h2 style="margin-top:14px;">Trở thành hệ điều hành nông nghiệp chuẩn của ASEAN.</h2>
+        <p class="lead" style="margin-top:20px;">Từ Tây Bắc Việt Nam → Lào + Cambodia + Myanmar coffee corridor → toàn bộ Đông Nam Á. Giữ IP 100% Việt Nam. Bán giải pháp, không bán dữ liệu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Philosophy -->
+<section class="section section-dark" id="tech">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" style="color:var(--amber);">Triết lý kỹ thuật</span>
+      <h2>5 nguyên tắc bất biến trong mọi quyết định</h2>
+      <p class="lead">An toàn → Độ tin cậy → Khả năng phục hồi → Đơn giản → Chi phí. Theo thứ tự cứng. Vi phạm là từ chối quyết định.</p>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card card-dark" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.10);">
+        <h3>1. Offline-first không phải khẩu hiệu</h3>
+        <p class="muted" style="margin-top:10px;">MQTT broker nhúng. SQLite tại chỗ. Mất net 24h hệ thống vẫn tưới đúng, vẫn ghi log, vẫn lưu telemetry. Khi có lại mạng, đồng bộ retry-safe + idempotent.</p>
+      </div>
+      <div class="card card-dark" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.10);">
+        <h3>2. Contract-first, không feature-first</h3>
+        <p class="muted" style="margin-top:10px;">API contracts, event contracts, payload schemas, state machines — chốt TRƯỚC khi viết feature. Đó là lý do FW + Web Local + Đám mây khớp byte-perfect.</p>
+      </div>
+      <div class="card card-dark" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.10);">
+        <h3>3. Một nguồn sự thật (Single Source of Truth)</h3>
+        <p class="muted" style="margin-top:10px;">Schema, naming, state ở đúng 1 chỗ. VERSION.md là canonical. Không hard-code version rời rạc. Lockstep rule = vi phạm = device reject.</p>
+      </div>
+      <div class="card card-dark" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.10);">
+        <h3>4. Frugal Innovation — bỏ được thì BỎ</h3>
+        <p class="muted" style="margin-top:10px;">Không cloud DB (SQLite-wasm thay). Không broker bên ngoài (aedes nhúng). Không K8s (monolith Express). Không outsource (founder tự xây). BOM 6tr VND/farm — đối thủ 30-50tr.</p>
+      </div>
+      <div class="card card-dark" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.10);">
+        <h3>5. Human-Centric Design</h3>
+        <p class="muted" style="margin-top:10px;">Cài 1 cú click bằng file `.bat`. Giao diện tiếng Việt. Lỗi tự rollback. Hai vợ chồng nông dân vận hành được. Không thuê đội DevOps. Không khóa license năm.</p>
+      </div>
+      <div class="card card-dark" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.10);">
+        <h3>6. Production over Demo</h3>
+        <p class="muted" style="margin-top:10px;">Reliability · maintainability · observability · traceability > tính năng hào nhoáng. 9/10 pen-test PASS. 47 bộ test tự động. 250+ module. Hệ thống đã chạy thực tế 60 ngày liên tục.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Founder section -->
+<section class="section" id="founder">
+  <div class="container">
+    <div class="section-head left">
+      <span class="eyebrow">Founder</span>
+      <h2>David Tạ — CEO / CTO / CMO / CFO</h2>
+      <p class="lead" style="margin-top:14px;">Một founder, full-stack từ phần cứng tới đám mây. IP 100% thuộc công ty. Iteration cycle 1-2 ngày. Không nợ kỹ thuật ngoài.</p>
+    </div>
+
+    <div class="grid grid-2" style="gap:50px;align-items:start;">
+      <div>
+        <div class="card">
+          <h3 style="margin-bottom:14px;">Background</h3>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:14px;color:var(--mid);font-size:15px;">
+            <li><b style="color:var(--deep);">Engineering:</b> Từ PCB design (KiCad) · firmware C++ (ESP32) · backend Node.js · cloud Google Apps Script · blockchain Aptos Move</li>
+            <li><b style="color:var(--deep);">Business:</b> CEO operations, customer development 52 farm Tây Bắc, đàm phán pilot</li>
+            <li><b style="color:var(--deep);">Marketing:</b> Pitch deck investor, content tiếng Việt-Anh, pricing strategy</li>
+            <li><b style="color:var(--deep);">Finance:</b> CAPEX/OPEX model, unit economics, financial projection</li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <div class="card card-dark">
+          <h3>Triết lý vận hành</h3>
+          <p style="margin-top:14px;color:var(--moss-soft);">"Quyết đoán, thực tế, không trì hoãn. Chuỗi ưu tiên cứng. Không chạy theo công nghệ hào nhoáng — chỉ xây những gì tạo ra giá trị thật."</p>
+          <div style="margin-top:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.10);">
+            <p style="font-size:13px;color:var(--moss);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;">Lý do làm 1 mình tới mốc pilot</p>
+            <p style="margin-top:10px;color:var(--moss-soft);font-size:14px;">Iteration 1-2 ngày · zero communication overhead · know-how thuộc về công ty · không nợ kỹ thuật ngoài · IP 100% Việt Nam. Sau pilot, mở team 4 người: BD + CS + QA + Ops.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stack tech visual -->
+<section class="section" style="background:var(--cream);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Tài sản kỹ thuật</span>
+      <h2>3 năm R&D · 4 lớp song hành · 100% in-house</h2>
+    </div>
+
+    <div class="grid grid-4">
+      <div class="stat-block text-center">
+        <div class="n">3</div>
+        <div class="l">năm R&D</div>
+        <div class="d">PCB V8, FW V9.4, Web V6, GAS V10.3 đã release</div>
+      </div>
+      <div class="stat-block text-center">
+        <div class="n">100%</div>
+        <div class="l">tự xây</div>
+        <div class="d">Không outsource từ bo mạch đến giao diện</div>
+      </div>
+      <div class="stat-block text-center">
+        <div class="n">52</div>
+        <div class="l">farm khảo sát</div>
+        <div class="d">Sơn La, Mộc Châu, Lào Cai, Hà Giang 2024-2026</div>
+      </div>
+      <div class="stat-block text-center">
+        <div class="n">10+</div>
+        <div class="l">spec doc</div>
+        <div class="d">SOP, contract, RACI, audit báo cáo đầy đủ</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lockstep timeline -->
+<section class="section">
+  <div class="container">
+    <div class="section-head left">
+      <span class="eyebrow">Lộ trình</span>
+      <h2>Từ Tây Bắc → ASEAN trong 18 tháng</h2>
+    </div>
+
+    <div class="grid" style="grid-template-columns:repeat(4,1fr); gap:16px;">
+      <div class="card">
+        <span class="pill pill-amber" style="margin-bottom:14px;"><span class="pill-dot"></span>NOW</span>
+        <h4>Q3 2026</h4>
+        <p class="muted" style="margin-top:8px;font-size:14px;">Pilot 100 device · Mộc Châu + Bắc Hà + Mèo Vạc · 30 farm chè/rau/dược liệu</p>
+      </div>
+      <div class="card">
+        <span class="pill" style="margin-bottom:14px;background:var(--cream);">NEXT</span>
+        <h4>Q4 2026</h4>
+        <p class="muted" style="margin-top:8px;font-size:14px;">Scale 500 device · toàn Sơn La + Lào Cai + Hà Giang + Thái Nguyên · GAS multi-tenant</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top:36px;">Q1 2027</h4>
+        <p class="muted" style="margin-top:8px;font-size:14px;">Web Local V7.0 multi-site · enterprise dashboard · API partner</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top:36px;">Q2 2027</h4>
+        <p class="muted" style="margin-top:8px;font-size:14px;">ASEAN 1000+ device · Lào + Myanmar chè & arabica corridor · EUDR/CBAM-ready export</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner">
+      <div>
+        <h2>Muốn nói chuyện trực tiếp với founder?</h2>
+        <p class="lead" style="margin-top:14px;">Demo bench device live 45 phút. Q&A về moat, traction, technical roadmap. Sẵn ký NDA.</p>
+      </div>
+      <div class="actions">
+        <a href="/pilot.html" class="btn btn-amber btn-lg">Đặt cuộc gặp →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="color:#fff;"><span class="brand-mark">ES</span><span>EcoSynTech Global</span></div>
+        <p style="margin-top:14px;font-size:14px;max-width:340px;">Hệ điều hành nông nghiệp offline-first sinh ra ở Việt Nam.</p>
+      </div>
+      <div>
+        <h4>Sản phẩm</h4>
+        <ul><li><a href="/farm-os.html">Farm OS V6.0</a></li><li><a href="/farm-os.html#features">Tính năng</a></li><li><a href="/farm-os.html#pricing">Gói pilot</a></li></ul>
+      </div>
+      <div>
+        <h4>Công ty</h4>
+        <ul><li><a href="/about.html">Giới thiệu</a></li><li><a href="/about.html#tech">Triết lý công nghệ</a></li><li><a href="/about.html#founder">Founder</a></li><li><a href="/policies.html">Chính sách</a></li></ul>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <ul><li><a href="/pilot.html">Đăng ký pilot</a></li><li><a href="mailto:davidta.ktqd.mba@gmail.com">davidta.ktqd.mba@gmail.com</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 EcoSynTech Global · Built in Vietnam 🇻🇳</div>
+      <div>Farm OS V6.0 · Firmware V9.4 · PCB V8 · GAS V10.3</div>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('navToggle')?.addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('open');});</script>
+</body>
+</html>

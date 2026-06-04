@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Đăng ký pilot Farm OS — EcoSynTech Global</title>
+<meta name="description" content="Đăng ký pilot 100 device EcoSynTech Farm OS — Mộc Châu + Lào Cai · Q3 2026. Chè đặc sản, rau VietGAP, dược liệu. ROI 8-11 tháng.">
+<meta name="theme-color" content="#225433">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/landing.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="brand">
+      <span class="brand-mark">ES</span>
+      <span>EcoSynTech</span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/farm-os.html">Farm OS</a></li>
+        <li><a href="/about.html">Công ty</a></li>
+        <li><a href="/farm-os.html#features">Tính năng</a></li>
+        <li><a href="/farm-os.html#pricing">Gói pilot</a></li>
+        <li><a href="/pilot.html" style="color:var(--primary);font-weight:700;">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <a href="/launcher.html" class="btn btn-ghost btn-sm">Đăng nhập</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" style="padding-bottom:40px;">
+  <div class="container">
+    <div style="max-width:760px;">
+      <span class="pill pill-amber"><span class="pill-dot"></span>Pilot Q3 2026 · còn 100 slot</span>
+      <h1 style="margin-top:18px;">Đăng ký <span class="em">pilot Farm OS</span> ngay hôm nay.</h1>
+      <p class="lead" style="margin-top:20px;">Gửi thông tin, chúng tôi liên hệ lại trong 48 giờ. Demo bench device tại Mộc Châu hoặc khảo sát trên trang trại của bạn.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Form + sidebar info -->
+<section class="section" style="padding-top:30px;">
+  <div class="container">
+    <div class="grid" style="grid-template-columns:1.4fr 1fr; gap:60px; align-items:start;">
+
+      <!-- LEFT: Form -->
+      <div class="card" style="padding:36px;">
+        <h2 style="font-size:28px; margin-bottom:8px;">Đăng ký quan tâm</h2>
+        <p class="muted" style="margin-bottom:28px;">Mọi trường có dấu * là bắt buộc. Dữ liệu chỉ dùng để liên hệ pilot, không chia sẻ bên thứ ba.</p>
+
+        <form id="pilotForm" class="form-grid" onsubmit="return handleSubmit(event)">
+          <div class="grid grid-2" style="gap:16px;">
+            <div class="field">
+              <label for="name">Họ tên *</label>
+              <input id="name" name="name" type="text" required placeholder="Nguyễn Văn A">
+            </div>
+            <div class="field">
+              <label for="phone">Số điện thoại *</label>
+              <input id="phone" name="phone" type="tel" required placeholder="0901 234 567" pattern="[0-9 ]{9,15}">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required placeholder="ban@example.com">
+          </div>
+
+          <div class="grid grid-2" style="gap:16px;">
+            <div class="field">
+              <label for="province">Tỉnh / Thành *</label>
+              <select id="province" name="province" required>
+                <option value="">— Chọn tỉnh —</option>
+                <option>Sơn La</option>
+                <option>Lào Cai</option>
+                <option>Hà Giang</option>
+                <option>Yên Bái</option>
+                <option>Điện Biên</option>
+                <option>Lai Châu</option>
+                <option>Thái Nguyên</option>
+                <option>Phú Thọ</option>
+                <option>Hà Nội</option>
+                <option>Tỉnh khác</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="role">Vai trò *</label>
+              <select id="role" name="role" required>
+                <option value="">— Chọn vai trò —</option>
+                <option>Chủ farm / hộ kinh doanh</option>
+                <option>HTX nông nghiệp</option>
+                <option>Doanh nghiệp nông sản</option>
+                <option>Cơ quan/quỹ nông nghiệp</option>
+                <option>Nhà đầu tư</option>
+                <option>Đối tác công nghệ</option>
+                <option>Khác</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-2" style="gap:16px;">
+            <div class="field">
+              <label for="crop">Cây trồng chính</label>
+              <select id="crop" name="crop">
+                <option value="">— Chọn —</option>
+                <option>Chè (Shan Tuyết, Ô Long…)</option>
+                <option>Cà phê arabica</option>
+                <option>Rau VietGAP / hữu cơ</option>
+                <option>Dược liệu (sâm, cát cánh…)</option>
+                <option>Hoa / cây cảnh</option>
+                <option>Lúa</option>
+                <option>Khác</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="size">Diện tích farm (ha)</label>
+              <select id="size" name="size">
+                <option value="">— Chọn —</option>
+                <option>&lt; 0.5 ha</option>
+                <option>0.5 – 2 ha</option>
+                <option>2 – 5 ha</option>
+                <option>5 – 20 ha</option>
+                <option>&gt; 20 ha</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="goal">Mục tiêu chính khi tham gia pilot</label>
+            <select id="goal" name="goal">
+              <option value="">— Chọn —</option>
+              <option>Giảm chi phí nước/nhân công</option>
+              <option>Sẵn sàng CBAM/EUDR cho xuất khẩu</option>
+              <option>Tự động hóa tưới + cảnh báo bão</option>
+              <option>Quản lý đa trang trại</option>
+              <option>Truy xuất nguồn gốc cho buyer EU/Nhật</option>
+              <option>Tìm hiểu thử trước khi quyết định</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="note">Ghi chú thêm (tùy chọn)</label>
+            <textarea id="note" name="note" placeholder="Mô tả ngắn về trang trại, vấn đề hiện tại, kỳ vọng…"></textarea>
+          </div>
+
+          <div style="margin-top:8px;display:flex;flex-direction:column;gap:14px;">
+            <label style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--mid);">
+              <input type="checkbox" required style="margin-top:3px;">
+              <span>Tôi đồng ý cho EcoSynTech Global lưu trữ thông tin này để liên hệ pilot. Không spam, không bán dữ liệu bên thứ ba.</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;margin-top:10px;">Gửi đăng ký →</button>
+
+          <p id="formStatus" class="tiny" style="text-align:center;margin-top:14px;"></p>
+        </form>
+      </div>
+
+      <!-- RIGHT: Info -->
+      <div style="display:flex;flex-direction:column;gap:24px;">
+        <div class="card card-dark">
+          <span class="eyebrow" style="color:var(--amber);">Cam kết</span>
+          <h3 style="margin-top:10px;">48 giờ phản hồi</h3>
+          <p class="muted" style="margin-top:10px;font-size:14px;">Đội kỹ thuật + business sẽ liên hệ qua điện thoại trong 48 giờ làm việc kể từ khi nhận đăng ký.</p>
+        </div>
+
+        <div class="card">
+          <h4 style="margin-bottom:14px;">Bạn sẽ nhận được gì</h4>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;color:var(--mid);font-size:14px;">
+            <li style="display:flex;gap:10px;"><span style="color:var(--amber);font-weight:700;">✓</span>Demo bench device live 45 phút</li>
+            <li style="display:flex;gap:10px;"><span style="color:var(--amber);font-weight:700;">✓</span>Khảo sát trang trại 1 ngày (miễn phí cho pilot)</li>
+            <li style="display:flex;gap:10px;"><span style="color:var(--amber);font-weight:700;">✓</span>Báo giá CAPEX + ROI tính cho farm của bạn</li>
+            <li style="display:flex;gap:10px;"><span style="color:var(--amber);font-weight:700;">✓</span>Tư vấn lộ trình CBAM/EUDR (nếu xuất khẩu)</li>
+            <li style="display:flex;gap:10px;"><span style="color:var(--amber);font-weight:700;">✓</span>Bản demo thử nghiệm 30 ngày (gói Pilot 100)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4 style="margin-bottom:14px;">Liên hệ trực tiếp</h4>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;color:var(--mid);font-size:14px;">
+            <li><b style="color:var(--deep);">Email:</b><br><a href="mailto:davidta.ktqd.mba@gmail.com">davidta.ktqd.mba@gmail.com</a></li>
+            <li><b style="color:var(--deep);">Website:</b><br>ecosyntech.global (sắp ra mắt)</li>
+            <li><b style="color:var(--deep);">Khu vực pilot:</b><br>Mộc Châu · Bắc Hà · Mèo Vạc · Thái Nguyên</li>
+          </ul>
+        </div>
+
+        <div class="card" style="background:var(--cream);">
+          <p class="tiny" style="margin-bottom:8px;font-weight:700;color:var(--deep);">CHÍNH SÁCH BẢO MẬT</p>
+          <p style="font-size:13px;color:var(--mid);">Thông tin của bạn được mã hóa khi truyền. Chỉ founder + team BD truy cập. Không bán, không chia sẻ. Có thể yêu cầu xóa bất cứ lúc nào theo PDPA Việt Nam.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background:var(--cream);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Câu hỏi thường gặp</span>
+      <h2>Trả lời thẳng những thắc mắc lớn nhất</h2>
+    </div>
+
+    <div class="grid grid-2" style="gap:24px;">
+      <div class="card">
+        <h4 style="margin-bottom:10px;">Tôi chưa có Internet ổn định ở farm thì sao?</h4>
+        <p class="muted" style="font-size:15px;">Hoàn hảo cho EcoSynTech. Hệ thống offline-first — chạy 24h+ không Internet vẫn tưới đúng. Khi có sóng lại, tự đồng bộ. Đây là lý do chúng tôi xây cho Tây Bắc.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom:10px;">Pilot 30 ngày có phí không?</h4>
+        <p class="muted" style="font-size:15px;">Pilot 100 device được trợ giá phần cứng. Khảo sát trang trại + tư vấn miễn phí. Bạn chỉ trả CAPEX phần cứng ưu đãi nếu quyết định triển khai.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom:10px;">Tôi không rành công nghệ — vận hành được không?</h4>
+        <p class="muted" style="font-size:15px;">Có. Cài 1 cú click bằng file `.bat`. Dashboard tiếng Việt. Đào tạo 1 ngày tại trang trại. Hai vợ chồng nông dân Mộc Châu đã vận hành thiết bị mẫu 60 ngày liên tục.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom:10px;">Dữ liệu của tôi có bị bán không?</h4>
+        <p class="muted" style="font-size:15px;">Không. Bạn sở hữu dữ liệu. Chúng tôi không kiếm tiền từ data — kiếm từ thiết bị + hỗ trợ. Đó là một trong những nguyên tắc cứng từ ngày 1.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom:10px;">Bao lâu thu hồi vốn?</h4>
+        <p class="muted" style="font-size:15px;">Chè đặc sản & rau xuất Nhật: 8-11 tháng. Các cây trồng khác: 12-18 tháng tùy quy mô. Chúng tôi tính ROI riêng cho từng farm trong báo giá pilot.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom:10px;">Tôi là nhà đầu tư — có thể nói chuyện không?</h4>
+        <p class="muted" style="font-size:15px;">Có. Chọn "Nhà đầu tư" trong form. Chúng tôi gửi investor brief, deck full, và đặt lịch demo founder 45 phút. Sẵn ký NDA.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="color:#fff;"><span class="brand-mark">ES</span><span>EcoSynTech Global</span></div>
+        <p style="margin-top:14px;font-size:14px;max-width:340px;">Hệ điều hành nông nghiệp offline-first sinh ra ở Việt Nam.</p>
+      </div>
+      <div>
+        <h4>Sản phẩm</h4>
+        <ul><li><a href="/farm-os.html">Farm OS V6.0</a></li><li><a href="/farm-os.html#features">Tính năng</a></li><li><a href="/farm-os.html#pricing">Gói pilot</a></li></ul>
+      </div>
+      <div>
+        <h4>Công ty</h4>
+        <ul><li><a href="/about.html">Giới thiệu</a></li><li><a href="/about.html#tech">Triết lý công nghệ</a></li><li><a href="/policies.html">Chính sách</a></li></ul>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <ul><li><a href="/pilot.html">Đăng ký pilot</a></li><li><a href="mailto:davidta.ktqd.mba@gmail.com">davidta.ktqd.mba@gmail.com</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 EcoSynTech Global · Built in Vietnam 🇻🇳</div>
+      <div>Farm OS V6.0 · Firmware V9.4 · PCB V8 · GAS V10.3</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle')?.addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('open');});
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const status = document.getElementById('formStatus');
+    const form = e.target;
+    const data = Object.fromEntries(new FormData(form));
+    status.style.color = 'var(--mid)';
+    status.textContent = 'Đang gửi...';
+
+    fetch('/api/contact/pilot', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    })
+    .then(r => {
+      if (r.ok) return r.json();
+      throw new Error('Lỗi máy chủ — vui lòng gửi trực tiếp tới davidta.ktqd.mba@gmail.com');
+    })
+    .then(j => {
+      status.style.color = 'var(--primary)';
+      status.textContent = '✓ Cảm ơn! Đã ghi nhận. Chúng tôi sẽ liên hệ trong 48 giờ.';
+      form.reset();
+    })
+    .catch(err => {
+      // Fallback: mailto
+      status.style.color = 'var(--amber-warm)';
+      const subject = encodeURIComponent('[Pilot] Đăng ký từ ' + (data.name || 'khách'));
+      const body = encodeURIComponent(Object.entries(data).map(([k,v]) => k+': '+v).join('\n'));
+      status.innerHTML = 'Server tạm chưa nhận. <a href="mailto:davidta.ktqd.mba@gmail.com?subject='+subject+'&body='+body+'" style="color:var(--deep);font-weight:600;">Mở email để gửi trực tiếp →</a>';
+    });
+    return false;
+  }
+</script>
+</body>
+</html>

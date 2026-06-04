@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ecosyntech68vn.github.io/ecosyntech-landing-2026-06/sitemap.xml
